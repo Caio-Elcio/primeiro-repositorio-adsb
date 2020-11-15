@@ -1,0 +1,50 @@
+/* FOOTER */
+.footer-index {
+    background-color: #74effc;
+    height: 100px;
+    margin-top: 22%;
+}
+.footer-index h4 {
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+    color: white;
+    font-weight: 100;
+}
+.footer-sabotage {
+    background-color:  #74EFFC;
+    height: 100px;
+    margin-top: 60%;
+}
+.footer-sabotage h4 {
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+    color: white;
+    font-weight: 100;
+}
+.footer-racionais {
+    background-color: #74EFFC;
+    height: 100px;
+    margin-top: 60%;
+}
+.footer-racionais h4 {
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+    color: white;
+    font-weight: 100;
+}
+.footer-login {
+    background-color: #74effc;
+    height: 100px;
+    margin-top: 2px;
+}
+.footer-login h4 {
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+    color: white;
+    font-weight: 100;
+}
+/* FIM FOOTER */

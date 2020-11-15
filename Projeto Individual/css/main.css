@@ -62,31 +62,15 @@ text-transform: uppercase;
 .menu {
 width: 70%;
 float: left;
-margin-top: 5px;
-}
-.busca {
-text-align: center;
-width: 30%;
-float: right;
-}
-.busca input {
-background-image: url(../img/icone-search.png);
-background-repeat: no-repeat;
-height: 36px;
-padding: 12px;
-width: 190px;
-margin-top: 10px;
-background-position: 96%;
-border: 1px solid #d6d6d6;
 }
 .col-100 {
-width: 107%;
+width: 108%;
 float: left;
 position: relative;
 height: 64px;
 }
-.col-100 img{
-width: 50%;
+.col-100 img {
+     width: 50%;
 }
 button.slick-prev {
 font-size: 0px; /*RESERTO A FONTE*/
@@ -96,7 +80,7 @@ height: 51px;
 z-index: 9;
 background-color: transparent;
 position: absolute;
-background-image: url(../img/anterior.png);
+background-image: url(../imagens/anterior.png);
 top: 35%;
 left: 14%;
 }
@@ -108,7 +92,7 @@ height: 51px;
 z-index: 9;
 background-color: transparent;
 position: absolute;
-background-image: url(../img/proximo.png);
+background-image: url(../imagens/proximo.png);
 top: 35%;
 right: 14%;
 }
@@ -131,8 +115,8 @@ cursor: pointer;
 margin: 0 auto;
 width: 50%;
 position: absolute;
-left: 42%;
-top: 450px;
+left: 48%;
+top: 650px;
 }
 li.slick-active button {
 background: #00bac6;
@@ -151,7 +135,7 @@ color: #646464;
 text-transform: uppercase;
 font-size: 30px;
 color: #818181;
-padding-top: 40%;
+padding-top: 61%;
 }
 .texto-destaque p {
 color: #9a9a9a;
@@ -184,13 +168,13 @@ h3 {
 font-weight: normal!important;
 }
 .showcase {
-background-image: url(../img/Rap_My_Life.jpg);
+background-image: url(../imagens/1.PNG);
 background-size: cover;
 background-repeat: no-repeat;
 color: white;
 /* CENTRALIZA O TEXTO */
 text-align: center;
-height: 548px;
+height: 525px;
 width: auto;
 margin-top: 67px;
 opacity: 0.9;
