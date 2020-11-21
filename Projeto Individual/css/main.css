@@ -47,12 +47,6 @@ color: #8b8b8b;
 margin-left: 15px;
 height: 40px;
 }
-.menu ul li:hover {
-border-bottom: 3px solid #00bac6;
-}
-.menu ul li a:hover {
-color: #00bac6;
-}
 .menu ul li a {
 color: #8b8b8b;
 text-decoration: none;
@@ -125,6 +119,18 @@ background: #00bac6;
 padding-left: 10px;
 display: inline-block;
 }
+.texto {
+     color: #00bac6;
+     text-align: center;
+     padding-top: 562px;
+     background-color: #646464;
+     margin-top: 65px;
+     height: 400px;
+}
+.clipe {
+     width: 1060px;
+     height: 250px;
+}
 .texto-destaque {
 text-align: center;
 }
@@ -186,20 +192,4 @@ padding-top: 80px;
 }
 .showcase p {
 font-size: 22px;
-}
-.glow {
-font-size: 80px;
-color: #fff;
-text-align: center;
--webkit-animation: glow 1s ease-in-out infinite alternate;
--moz-animation: glow 1s ease-in-out infinite alternate;
-animation: glow 1s ease-in-out infinite alternate;
-}
-@-webkit-keyframes glow {
-from {
-text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-}
-to {
-text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-}
 }
