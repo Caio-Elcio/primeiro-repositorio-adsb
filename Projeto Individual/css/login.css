@@ -1,0 +1,29 @@
+.login {
+    background-image: url(../imagens/login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    min-height: 918px;
+    
+    margin-top: 67px;
+}
+.login h4 {
+    margin: 0;
+    text-align: center;
+    font-size: 140%;
+    padding-top: 10px;
+}
+.login form {
+    text-align: center;
+}
+.login input {
+    text-align: center;
+    height: 28px;
+    width: 250px;
+    border-radius: 28px;
+    text-decoration: none;
+}
+.botao {
+   
+}

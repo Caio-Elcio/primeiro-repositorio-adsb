@@ -1,0 +1,29 @@
+ ESTRUTURA DE PASTAS
+
+ IMAGENS
+ CSS
+ JS 
+ ARQUIVOS.html
+ 
+ <main></main> --> Seria nossa tag principal, certo. Ela vai englobar
+ todo nosso conteúdo.
+ 
+ !important. Sobrescrever essa propriedade do navegador. Vai acabar
+ fazendo com que ele reserte.
+
+ GERALMENTE A POSIÇÕES DE BOTÕES PRECISAM SER ABSOLUTOS, COMO NESSA
+ SITUAÇÃO, PRECISA POSICIONAR ELE NUMA CERTA ALTURA DA TELA. VAI FICAR
+ NUMA POSIÇÃO ABSOLUTA, NÃO VAI DEPENDER DE NEHNUM ELEMENTO, DIV,ETC.
+ position: absolute; 
+
+ z-index:9 
+ ELE AJUDA A GENTE A DEIXAR O ELEMENTO MAIS EM CIMA DE OUTRAS LEARS.
+  
+ top:20p%
+ left:0; pra ficar no canto, pra nehnum elemento empurrar ele. 
+
+ position:absolute; 
+ faz com que ele nao siga nenhum padrão de nenhuma div pai.
+
+ div col-100 sempre que tiver uma outra divisão, outra parte de
+ conteudo. 
