@@ -33,13 +33,13 @@ overflow-x: hidden;
      background-color: white;
      height: 80px;
      padding-top: 30px;
-     border-bottom: orangered solid 3px;
+     border-bottom: red solid 3px;
+}
+.header-2 .nav .current a {
+     color: #74EFFC;
 }
 /* FIM HEADER */
 /* NAV */
-.nav ul {
-     margin: 0;
-}
 .nav {
      float: right;
 }
@@ -51,8 +51,12 @@ overflow-x: hidden;
 }
 .nav li {
      display: inline-block;
-     padding: 20px;
-     padding: 10px 20px 0 20px;
+     margin-left: -400px;
+     margin-right: 470px;
+     padding-top: 17px;
+}
+.nav ul {
+     margin: 0;
 }
 /* FIM NAV */
 /* SHOWCASE */
