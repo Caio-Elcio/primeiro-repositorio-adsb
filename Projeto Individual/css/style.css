@@ -130,6 +130,6 @@ right: 14%;
 .clipe video {
      width: auto;
      height: 240px;
-     float: left;
+     float: center;
      margin: 15px;
 }
