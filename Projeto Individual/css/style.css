@@ -51,8 +51,8 @@ overflow-x: hidden;
 }
 .nav li {
      display: inline-block;
-     margin-left: -400px;
-     margin-right: 470px;
+     margin-left: -283px;
+     margin-right: 310px;
      padding-top: 17px;
 }
 .nav ul {
@@ -67,7 +67,7 @@ overflow-x: hidden;
      /* CENTRALIZA O TEXTO */
      color: white;
      text-align: center;
-     min-height: 525px;
+     min-height: 410px;
 }
 .showcase h1 {
      margin: 0;
@@ -84,8 +84,8 @@ overflow-x: hidden;
      text-align: center;
      width: 300px;
      float: left;
-     padding: 40px 82px;
-}
+     padding: 40px 29px;
+ }
 .box img {
      height: 100px;
 }
@@ -131,9 +131,9 @@ right: 14%;
      height: auto;
      text-align: center;
 }
-.clipe video {
-     width: auto;
+.clipe iframe {
+     width: 400px;
      height: 240px;
      float: center;
-     margin: 15px;
+     margin: 10px;
 }
