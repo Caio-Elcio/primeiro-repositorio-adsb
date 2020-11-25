@@ -1,62 +1,62 @@
 /* GLOBAL */
 body {
-font-family: Arial, Helvetica, sans-serif;
-margin: 0;
-padding: 0;
-overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 .container {
-     /* LARGURA */
-     width: 80%;
-     margin: auto;
-     height: 50px;
+    /* LARGURA */
+    width: 80%;
+    margin: auto;
+    height: 50px;
 }
 /* FIM GLOBAL */
 /* HEADER */
 .header-1 {
-     background-color: #74EFFC;
-     height: 80px;
-     padding-top: 30px;
+    background-color: #74EFFC;
+    height: 80px;
+    padding-top: 30px;
 }
 .redes-sociais {
-     width: 26%;
-     float: right;
-     margin-top: -15px;
+    width: 26%;
+    float: right;
+    margin-top: -15px;
 }
 .redes-sociais ul li {
-     margin-left: 25px;
-     display: inline-block;
-     float: left;
-     list-style: none;
+    margin-left: 25px;
+    display: inline-block;
+    float: left;
+    list-style: none;
 }
 .header-2 {
-     background-color: white;
-     height: 80px;
-     padding-top: 30px;
-     border-bottom: red solid 3px;
+    background-color: white;
+    height: 80px;
+    padding-top: 30px;
+    border-bottom: red solid 3px;
 }
 .header-2 .nav .current a {
-     color: #74EFFC;
+    color: #74EFFC;
 }
 /* FIM HEADER */
 /* NAV */
 .nav {
-     float: right;
+    float: right;
 }
 .nav a {
-     text-decoration: none;
-     color: black;
-     text-transform: uppercase;
-     font-size: 18px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;
 }
 .nav li {
-     display: inline-block;
-     margin-left: -283px;
-     margin-right: 310px;
-     padding-top: 17px;
+    display: inline-block;
+    margin-left: -345px;
+    margin-right: 444px;
+    padding-top: 17px;
 }
 .nav ul {
-     margin: 0;
+    margin: 0;
 }
 /* FIM NAV */
 /* SHOWCASE */
@@ -64,76 +64,75 @@ overflow-x: hidden;
      background-image: url(../imagens/index.png);
      background-size: cover;
      background-repeat: no-repeat;
-     /* CENTRALIZA O TEXTO */
      color: white;
      text-align: center;
-     min-height: 410px;
-}
+     min-height: 579px;
+ }
 .showcase h1 {
-     margin: 0;
-     font-size: 55px;
-     padding-top: 100px;
+    margin: 0;
+    font-size: 55px;
+    padding-top: 100px;
 }
 /* FIM SHOWCASE */
 /* VALORES */
 .box {
-     /* height: 300px; (pode usar esse aqui em vez de overflow) */
-     overflow: auto;
+    /* height: 300px; (pode usar esse aqui em vez de overflow) */
+    overflow: auto;
 }
 .box .box-item {
      text-align: center;
      width: 300px;
      float: left;
-     padding: 40px 29px;
+     padding: 40px 92px;
  }
 .box img {
-     height: 100px;
+    height: 100px;
 }
 /* FIM VALORES */
 
 .col-100 {
-width: auto;
+    width: auto;
 }
 button.slick-prev {
-font-size: 0px; /* RESERTO A FONTE */
-border: none; /* TIRAR A BORDA DO BOTÃO PADRÃO */
-width: 25px; 
-height: 51px;
-z-index: 9;
-background-color: transparent;
-position: absolute;
-background-image: url(../imagens/anterior.png);
-top: 35%;
-left: 14%;
+    font-size: 0px; /* RESERTO A FONTE */
+    border: none; /* TIRAR A BORDA DO BOTÃO PADRÃO */
+    width: 25px; 
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../imagens/anterior.png);
+    top: 35%;
+    left: 14%;
 }
 button.slick-next {
-font-size: 0px; /* RESERTO A FONTE */
-border: none; /* TIRAR A BORDA DO BOTÃO PADRÃO */ 
-width: 25px; 
-height: 51px;
-z-index: 9;
-background-color: transparent;
-position: absolute;
-background-image: url(../imagens/proximo.png);
-top: 35%;
-right: 14%;
+    font-size: 0px; /* RESERTO A FONTE */
+    border: none; /* TIRAR A BORDA DO BOTÃO PADRÃO */ 
+    width: 25px; 
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../imagens/proximo.png);
+    top: 35%;
+    right: 14%;
 }
 .texto {
-     color: #00bac6;
-     text-align: center;
-     padding: 200px;
-     background-color: #646464;
-     margin-top: 5px;
-     height: 100px;
+    color: #00bac6;
+    text-align: center;
+    padding: 200px;
+    background-color: #646464;
+    margin-top: 5px;
+    height: 100px;
 }
 .clipe {
-     width: auto;
-     height: auto;
-     text-align: center;
+    width: auto;
+    height: auto;
+    text-align: center;
 }
-.clipe iframe {
-     width: 400px;
-     height: 240px;
-     float: center;
-     margin: 10px;
+.clipe video {
+    width: 400px;
+    height: 240px;
+    float: center;
+    margin: 10px;
 }
