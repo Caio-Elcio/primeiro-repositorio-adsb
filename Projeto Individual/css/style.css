@@ -14,7 +14,7 @@ body {
 /* FIM GLOBAL */
 /* HEADER */
 .header-1 {
-    background-color: #74EFFC;
+    background-color: aqua;
     height: 80px;
     padding-top: 30px;
 }
@@ -33,10 +33,10 @@ body {
     background-color: white;
     height: 80px;
     padding-top: 30px;
-    border-bottom: red solid 3px;
+    border-bottom: orangered solid 3px;
 }
 .header-2 .nav .current a {
-    color: #74EFFC;
+    color: orangered;
 }
 /* FIM HEADER */
 /* NAV */
@@ -51,8 +51,8 @@ body {
 }
 .nav li {
     display: inline-block;
-    margin-left: -345px;
-    margin-right: 444px;
+    margin-left: -336px;
+    margin-right: 435px;
     padding-top: 17px;
 }
 .nav ul {
@@ -117,11 +117,15 @@ button.slick-next {
     top: 35%;
     right: 14%;
 }
+.info-sabotage .texto {
+    border-radius: 20px;
+    width: auto;
+}
 .texto {
-    color: #00bac6;
+    color: white;
     text-align: center;
     padding: 200px;
-    background-color: #646464;
+    background-color: gray;
     margin-top: 5px;
     height: 100px;
 }

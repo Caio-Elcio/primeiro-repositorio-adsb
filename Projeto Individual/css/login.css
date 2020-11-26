@@ -1,28 +1,45 @@
 .login {
-    background-image: url(../imagens/login.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+    background-color: gray;
+    color: black;
     text-align: center;
-    min-height: 918px;
+    min-height: 500px;
     margin-top: auto;
-}
-.login h4 {
-    margin: 0;
-    text-align: center;
-    font-size: 140%;
-    padding-top: 10px;
-}
-.login form {
-    text-align: center;
 }
 .login input {
     text-align: center;
-    height: 28px;
-    width: 250px;
-    border-radius: 28px;
-    text-decoration: none;
+    height: 30px;
+    border-radius: 10px;
+    width: 270px;
+    margin-top: 15px;
+    border: 1px solid rgba(60, 60, 60, 0.5);
+    outline: none;
+}
+.login .container {
+    background-color: white;
+    height: 228px;
+    width: 400px;
+    border-radius: 10px;
+}
+#mensagem_email {
+    width: -webkit-fill-available;
+    text-align: center;
+    font-size: 14px;
+}
+#mensagem_senha {
+    width: -webkit-fill-available;
+    text-align: center;
+    font-size: 14px;
 }
 .botao {
-   
+    background-color: aqua;
+    color: black;
+    border-radius: 100px;
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    border: none;
+    outline: none;
 }
+/*
+    border: 1px solid rgba(60, 60, 60, 0.5);
+    

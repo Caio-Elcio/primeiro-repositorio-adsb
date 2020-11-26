@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -44,12 +44,11 @@
     <!-- FIM HEADER 2 -->
     <div class="login">
         <div class="container">
-            <h4> Faça seu login</h4> <br>
-            <form>
-                <input type="text" placeholder="Insira seu e-mail"> <br>
-                <input type="text" placeholder="Insira sua senha"> <br>
-                <button class="botao">Login</button>
-            </form>
+            <input type="text" name="" id="email" onkeyup="validar_email()" placeholder="E-mail"> <br> 
+            <p id="mensagem_email"></p>
+            <input type="password" name="" id="senha" onkeyup="validar_senha()" placeholder="Senha"> <br>
+            <p id="mensagem_senha"></p>
+            <button class="botao">Login</button>
         </div>
     </div>
     <!-- FOOTER -->
@@ -62,3 +61,25 @@
 </body>
 
 </html>
+<script>
+    function validar_email() {
+        var e_mail = email.value;
+        if (e_mail.includes('@') == true && e_mail.includes('.com') == true) {
+            email.style = `border-color: green`;
+            mensagem_email.innerHTML = `E-mail válido`;
+        } else {
+            email.style = `border-color:red`;
+            mensagem_email.innerHTML = 'Informe um e-mail válido!';
+        }
+    }
+    function validar_senha() {
+        var senh_a = senha.value;
+        if (senh_a.length >= 6) {
+            senha.style = `border-color: green`;
+            mensagem_senha.innerHTML = 'Senha válida';
+        } else {
+            senha.style = `border-color:red`;
+            mensagem_senha.innerHTML = 'Informe uma senha válida!';
+        }
+    }
+</script>
