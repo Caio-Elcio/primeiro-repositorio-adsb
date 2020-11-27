@@ -2,6 +2,7 @@
 .footer-index {
     background-color: aqua;
     height: 100px;
+    margin-top: 4px;
 }
 .footer-index h4 {
     text-align: center;

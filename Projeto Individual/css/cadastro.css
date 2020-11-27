@@ -3,7 +3,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-color: aqua;
     color: black;
     text-align: center;
     min-height: 575px;
@@ -21,16 +21,14 @@
     background-color: white;
     min-height: 475px;
     width: 400px;
+    padding-top: 20px;
     border-radius: 10px;
     margin: 0;
 }
-
 #img{
-    background-image: url(https://i.pinimg.com/originals/00/64/92/006492044d1a371d17b6d70c0c19d8af.jpg);
+    background-image: url(../imagens/imagem_cadastro.jpg);
     background-size: contain;
-
 }
-
 .botao {
     background-color: aqua;
     color: black;
@@ -43,9 +41,4 @@
 }   
 #usuario {
     text-transform: capitalize;
-}
-.cadastro-img .container {
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 1000px;
 }

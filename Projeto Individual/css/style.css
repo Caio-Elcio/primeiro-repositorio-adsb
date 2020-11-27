@@ -68,23 +68,11 @@ body {
      text-align: center;
      min-height: 579px;
  }
-/* FIM SHOWCASE */
-/* VALORES */
-.box {
-    /* height: 300px; (pode usar esse aqui em vez de overflow) */
-    overflow: auto;
-}
-.box .box-item {
+ .showcase h3 {
      text-align: center;
-     width: 300px;
-     float: left;
-     padding: 40px 92px;
+     font-family: fangsong;
  }
-.box img {
-    height: 100px;
-}
-/* FIM VALORES */
-
+/* FIM SHOWCASE */
 .col-100 {
     width: auto;
 }

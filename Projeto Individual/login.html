@@ -51,12 +51,14 @@
             <p id="mensagem_senha"></p>
             <button onclick="redirecionar()" class="botao">Login</button>
         </div>
+        <div class="container" id="img">
+        </div>
     </div>
     <!-- FIM LOGIN -->
     <!-- FOOTER -->
     <div class="footer-login">
         <div class="container">
-            <h4>Feito por Caio Elcio. Aluno BandTec &copy; Copyright 2020.</h4>
+            <h4>Feito por Caio Elcio. Aluno BandTec 💻 &copy; Copyright 2020.</h4>
         </div>
     </div>
     <!-- FIM FOOTER -->
@@ -66,7 +68,7 @@
 <script>
     function validar_usuario() {
         var usuari_o = usuario.value;
-       
+
         if (usuari_o.length >= 5 == true) {
             usuario.style = `border-color: green`;
             mensagem_usuario.innerHTML = `Usuário válido`;

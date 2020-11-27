@@ -1,9 +1,12 @@
 .login {
-    background-color: gray;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
     color: black;
     text-align: center;
-    min-height: 500px;
-    margin-top: auto;
+    min-height: 575px;
 }
 .login input {
     text-align: center;
@@ -13,21 +16,17 @@
     margin-top: 15px;
     border: 1px solid rgba(60, 60, 60, 0.5);
     outline: none;
+}
+#usuario {
     text-transform: capitalize;
 }
 .login .container {
     background-color: white;
-    height: 228px;
+    min-height: 475px;
     width: 400px;
+    padding-top: 20px;
     border-radius: 10px;
-}
-#mensagem_email {
-    text-align: center;
-    font-size: 14px;
-}
-#mensagem_senha {
-    text-align: center;
-    font-size: 14px;
+    margin: 0;
 }
 .botao {
     background-color: aqua;
@@ -39,3 +38,8 @@
     font-size: 17px;
     outline: none;
 }   
+#img {
+    background-image: url(https://i.pinimg.com/736x/76/e7/22/76e72212c39d802a57743dd38a7ca5ed.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
