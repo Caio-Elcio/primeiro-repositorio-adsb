@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>
@@ -40,6 +42,63 @@
         </div>
     </div>
     <!-- FIM HEADER 2 -->
+    <!-- CADASTRO -->
+
+    <div class="cadastro">
+        <div class="container">
+            Nome de usuário: <input type="text" id="usuario" placeholder="Usuário"> <br> <br>
+            Informe seu e-mail: <input type="text" name="" id="email" onkeyup="validar_email()" placeholder="E-mail">
+            <p id="mensagem_email"></p>
+            Digite sua senha: <input type="password" name="" id="senha1" onkeyup="validar_senha1()" placeholder="Senha">
+            <p id="mensagem_senha1"></p>
+            Confirme sua senha: <input type="password" name="" id="senha2" onkeyup="validar_senha2()"
+                placeholder="Senha">
+            <p id="mensagem_senha2"></p>
+            <button onclick="redirecionar()" class="botao">Cadastrar</button>
+        </div>
+        <div class="container" id="img">
+        </div>
+    </div>
+    <!-- FIM CADASTRO -->
+    <!-- FOOTER -->
+    <div class="footer-cadastro">
+        <div class="container">
+            <h4>Feito por Caio Elcio. Aluno BandTec &copy; Copyright 2020.</h4>
+        </div>
+    </div>
+    <!-- FIM FOOTER -->
 </body>
 
 </html>
+<script>
+    function validar_email() {
+        var e_mail = email.value;
+        if (e_mail.includes('@') == true && e_mail.includes('.com') == true) {
+            email.style = `border-color: green`;
+            mensagem_email.innerHTML = `E-mail válido`;
+        } else {
+            email.style = `border-color: red`;
+            mensagem_email.innerHTML = `Informe um e-mail válido!`;
+        }
+    }
+    function validar_senha1() {
+        var senh_a1 = senha1.value;
+        if (senh_a1.length >= 6) {
+            senha1.style = `border-color: green`;
+            mensagem_senha1.innerHTML = `Senha válida`;
+        } else {
+            senha1.style = `border-color: red`;
+            mensagem_senha1.innerHTML = `Informe uma senha válida!`;
+        }
+    }
+    function validar_senha2() {
+        var senh_a2 = senha2.value;
+        if (senh_a2.length >= 6) {
+            senha2.style = `border-color: green`;
+            mensagem_senha2.innerHTML = `Senha válida`;
+        } else {
+            senha2.style = `border-color: red`;
+            mensagem_senha2.innerHTML = `Informe uma senha válida!`;
+        }
+    }
+</script>

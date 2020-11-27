@@ -46,4 +46,16 @@
     color: black;
     font-weight: 100;
 }
+.footer-cadastro {
+    background-color: aqua;
+    height: 100px;
+    margin-top: 4px;
+}
+.footer-cadastro h4 {
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+    color: black;
+    font-weight: 100;
+}
 /* FIM FOOTER */

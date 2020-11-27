@@ -52,7 +52,7 @@ body {
 .nav li {
     display: inline-block;
     margin-left: -336px;
-    margin-right: 435px;
+    margin-right: 434px;
     padding-top: 17px;
 }
 .nav ul {
@@ -68,11 +68,6 @@ body {
      text-align: center;
      min-height: 579px;
  }
-.showcase h1 {
-    margin: 0;
-    font-size: 55px;
-    padding-top: 100px;
-}
 /* FIM SHOWCASE */
 /* VALORES */
 .box {
@@ -128,6 +123,10 @@ button.slick-next {
     background-color: gray;
     margin-top: 5px;
     height: 100px;
+}
+.info-racionais .texto {
+    border-radius: 20px;
+    width: auto;
 }
 .clipe {
     width: auto;

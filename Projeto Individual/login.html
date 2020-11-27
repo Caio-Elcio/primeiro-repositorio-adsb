@@ -42,19 +42,21 @@
         </div>
     </div>
     <!-- FIM HEADER 2 -->
+    <!-- LOGIN -->
     <div class="login">
         <div class="container">
-            <input type="text" name="" id="email" onkeyup="validar_email()" placeholder="E-mail"> <br> 
-            <p id="mensagem_email"></p>
-            <input type="password" name="" id="senha" onkeyup="validar_senha()" placeholder="Senha"> <br>
+            <input type="text" name="" id="usuario" onkeyup="validar_usuario()" placeholder="Usuário">
+            <p id="mensagem_usuario"></p>
+            <input type="password" name="" id="senha" onkeyup="validar_senha()" placeholder="Senha">
             <p id="mensagem_senha"></p>
-            <button class="botao">Login</button>
+            <button onclick="redirecionar()" class="botao">Login</button>
         </div>
     </div>
+    <!-- FIM LOGIN -->
     <!-- FOOTER -->
     <div class="footer-login">
         <div class="container">
-            <h4>&copy; Copyright 2020. Todos os direitos reservados.</h4>
+            <h4>Feito por Caio Elcio. Aluno BandTec &copy; Copyright 2020.</h4>
         </div>
     </div>
     <!-- FIM FOOTER -->
@@ -62,14 +64,15 @@
 
 </html>
 <script>
-    function validar_email() {
-        var e_mail = email.value;
-        if (e_mail.includes('@') == true && e_mail.includes('.com') == true) {
-            email.style = `border-color: green`;
-            mensagem_email.innerHTML = `E-mail válido`;
+    function validar_usuario() {
+        var usuari_o = usuario.value;
+       
+        if (usuari_o.length >= 5 == true) {
+            usuario.style = `border-color: green`;
+            mensagem_usuario.innerHTML = `Usuário válido`;
         } else {
-            email.style = `border-color:red`;
-            mensagem_email.innerHTML = 'Informe um e-mail válido!';
+            usuario.style = `border-color:red`;
+            mensagem_usuario.innerHTML = 'Informe usuário válido!';
         }
     }
     function validar_senha() {
