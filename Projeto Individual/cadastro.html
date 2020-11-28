@@ -43,18 +43,21 @@
     </div>
     <!-- FIM HEADER 2 -->
     <!-- CADASTRO -->
-
     <div class="cadastro">
         <div class="container">
-            Nome de usuário: <input type="text" id="usuario" placeholder="Usuário"> <br> <br>
-            Informe seu e-mail: <input type="text" name="" id="email" onkeyup="validar_email()" placeholder="E-mail">
-            <p id="mensagem_email"></p>
-            Digite sua senha: <input type="password" name="" id="senha1" onkeyup="validar_senha1()" placeholder="Senha">
-            <p id="mensagem_senha1"></p>
-            Confirme sua senha: <input type="password" name="" id="senha2" onkeyup="validar_senha2()"
-                placeholder="Senha">
-            <p id="mensagem_senha2"></p>
-            <button onclick="redirecionar()" class="botao">Cadastrar</button>
+            <form id="form_cadastro" method="POST" onsubmit="return cadastrar()">
+                Nome de usuário: <input type="text" name="nome" id="usuario" placeholder="Usuário"> <br> <br>
+                Informe seu e-mail: <input type="text" name="email" id="email" onkeyup="validar_email()"
+                    placeholder="E-mail">
+                <p id="mensagem_email"></p>
+                Digite sua senha: <input type="password" name="senha" id="senha1" onkeyup="validar_senha1()"
+                    placeholder="Senha">
+                <p id="mensagem_senha1"></p>
+                Confirme sua senha: <input type="password" name="" id="senha2" onkeyup="validar_senha2()"
+                    placeholder="Senha">
+                <p id="mensagem_senha2"></p>
+                <button type="submit" class="botao">Cadastrar</button>
+            </form>
         </div>
         <div class="container" id="img">
         </div>
@@ -71,6 +74,27 @@
 
 </html>
 <script>
+    function cadastrar() {
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+
+            if (response.ok) {
+
+                window.location.href = 'login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+            }
+        });
+        return false;
+    }
     function validar_email() {
         var e_mail = email.value;
         if (e_mail.includes('@') == true && e_mail.includes('.com') == true) {
@@ -100,5 +124,8 @@
             senha2.style = `border-color: red`;
             mensagem_senha2.innerHTML = `Informe uma senha válida!`;
         }
+    }
+    function redirecionar() {
+        window.location.href = "login.html";
     }
 </script>

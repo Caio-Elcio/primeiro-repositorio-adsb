@@ -116,10 +116,18 @@ button.slick-next {
     border-radius: 20px;
     width: auto;
 }
+.clipe-total {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .clipe {
-    width: auto;
+    width: 70%;
     height: auto;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .clipe video {
     width: 400px;

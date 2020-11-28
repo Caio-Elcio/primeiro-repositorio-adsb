@@ -1,0 +1,20 @@
+CLICAR EM BANCO DE DADOS SQL -->
+
+CRIAR BANCOS DE DADOS SQL -->
+
+NOME RECURSOS: projeto  -->
+
+NOME BANCO DE DADOS: nacionalweb  -->
+
+NOME DO SERVIDOR: nacionalweb  -->
+
+NOME DO SERVIDOR: nacionalweb -->
+
+Logon do administrador do servidor --> nacionalweb
+
+Senha #Gf50794882803 -->
+
+CRIAR TABELAS: IR EM EDITOR DE CONSULTAS -->
+
+FAZER LOGIN E SENHA -->
+
