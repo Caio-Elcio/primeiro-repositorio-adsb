@@ -100,28 +100,29 @@ button.slick-next {
     top: 35%;
     right: 14%;
 }
-.info-sabotage .texto {
+.info-sabotage  {
     border-radius: 20px;
     width: auto;
 }
 .texto {
     color: white;
-    text-align: center;
-    padding: 200px;
-    background-color: gray;
+    padding: 426px;
+    background-color: black;
     margin-top: 5px;
-    height: 100px;
+    height: 200px;
+    padding-top: 8px;
 }
-.info-racionais .texto {
+.info-racionais  {
     border-radius: 20px;
     width: auto;
+/* MÚSICAS SABOTAGE */
 }
-.clipe-total {
+.clipe-total-1 {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.clipe {
+.clipe-0 {
     width: 70%;
     height: auto;
     text-align: center;
@@ -129,9 +130,32 @@ button.slick-next {
     flex-direction: row;
     flex-wrap: wrap;
 }
-.clipe video {
+.clipe-0 video {
     width: 400px;
     height: 240px;
     float: center;
     margin: 10px;
 }
+/* FIM MÚSICAS SABOTAGE */
+/* MÚSICAS RACIONAIS MC's */
+.clipe-total-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.clipe-1 {
+    width: 100%;
+    height: auto;
+    margin-left: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.clipe-1 video {
+    width: 400px;
+    height: 240px;
+    float: center;
+    margin: 10px;
+}
+/* FIM MÚSICAS RACIONAIS MC's */
