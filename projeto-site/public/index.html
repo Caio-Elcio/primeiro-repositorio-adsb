@@ -15,7 +15,7 @@
         <div class="container">
             <div class="logo">
                 <img src="./imagens/logo.png" />
-                <div class="redes-sociais">
+                <div class="icones">
                     <ul>
                         <li><img src="./imagens/mic.png"></li>
                         <li><img src="./imagens/dj.png"></li>
@@ -32,8 +32,8 @@
             <div class="nav">
                 <ul>
                     <li class="current"><a href="index.html">Início</a></li>
-                    <li><a href="sabotage.html">Sabotage</a></li>
-                    <li><a href="racionais.html">Racionais MC's</a></li>
+                    <li><a id="sabotage" style="display: none;" href="sabotage.html">Sabotage</a></li>
+                    <li><a id="racionais" style="display: none;" href="racionais.html">Racionais MC's</a></li>
                     <li><a href="login.html">Login</a></li>
                     <li><a href="cadastro.html">Cadastro</a></li>
                 </ul>
@@ -59,4 +59,13 @@
 </body>
 
 </html>
-<!-- https://html-css-js.com/html/character-codes/ -->
+<script>
+    session();
+    function session() {
+        var session = sessionStorage.getItem("nome");
+        if (session != undefined) {
+            sabotage.style = "display:block";
+            racionais.style = "display:block";
+        }
+    }
+</script>

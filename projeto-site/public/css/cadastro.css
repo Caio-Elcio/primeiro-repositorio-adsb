@@ -1,3 +1,4 @@
+/* CADASTRO */
 .cadastro {
     display: flex;
     width: 100%;
@@ -23,7 +24,7 @@
     width: 400px;
     padding-top: 20px;
     border-radius: 10px;
-    margin: 0;
+    margin: 0px;
 }
 #img{
     background-image: url(../imagens/imagem_cadastro.jpg);
@@ -42,3 +43,4 @@
 #usuario {
     text-transform: capitalize;
 }
+/* FIM CADASTRO */

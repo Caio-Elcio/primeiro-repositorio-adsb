@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/contato-e-login.css">
     <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!--header inicio-->
     <div class="header">
@@ -17,31 +19,32 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href=""class="current">Cadastro</a></li>
+                    <li><a href="" class="current">Cadastro</a></li>
                     <li><a href="login.html">Login</a></li>
                 </ul>
             </div>
         </div>
     </div>
     <!--header fim-->
-
     <div class="contato">
         <div class="container">
             <h1>Faça seu cadastro aqui!</h1>
             <div class="formulario">
                 <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
                     <label for="nome">Nome e sobrenome</label>
-                        <input type="text" name="nome" class="input-padrao" autofocus="autofocus" placeholder="Nome completo"  required minlength="4">
+                    <input type="text" name="nome" class="input-padrao" autofocus="autofocus"
+                        placeholder="Nome completo" required minlength="4">
                     <label for="login">Login</label>
-                        <input type="text" name="login" class="input-padrao" placeholder="Usuário para login"  required minlength="4">
+                    <input type="text" name="login" class="input-padrao" placeholder="Usuário para login" required
+                        minlength="4">
                     <label for="senha">Senha</label>
-                        <input type="password" name="senha" class="input-padrao" placeholder="**********"  required minlength="4">
-                    
+                    <input type="password" name="senha" class="input-padrao" placeholder="**********" required
+                        minlength="4">
+
                     <input type="submit" id="btn_entrar" value="Cadastrar" class="btn">
                 </form>
-                
                 <img src="img/carregando.gif" id="img_aguarde" style="display: none;" width="100px">
-    
+
                 <div id="div_erro" style="background-color: #bf8899; color: maroon; display: none;">
                     Erro no cadastro
                 </div>
@@ -51,10 +54,7 @@
             </div>
         </div>
     </div>
-
-    
-
-     <!--footer inicio-->
+    <!--footer inicio-->
     <div class="footer">
         <div class="container">
             <h4>Feito com <i class="far fa-heart"></i> por um aluno BandTec &COPY; 2020</h4>
@@ -62,10 +62,9 @@
     </div>
     <!--footer fim-->
 </body>
+
 </html>
-
 <script>
-
     function cadastrar() {
         aguardar();
         var formulario = new URLSearchParams(new FormData(form_cadastro));
@@ -73,13 +72,9 @@
             method: "POST",
             body: formulario
         }).then(function (response) {
-            
             if (response.ok) {
-
-                window.location.href='login.html';
-
+                window.location.href = 'login.html';
             } else {
-
                 console.log('Erro de cadastro!');
                 response.text().then(function (resposta) {
                     div_erro.innerHTML = resposta;
@@ -87,20 +82,16 @@
                 finalizar_aguardar();
             }
         });
-
         return false;
     }
-
     function aguardar() {
         btn_entrar.disabled = true;
-        img_aguarde.style.display='block';
-        div_erro.style.display='none';
+        img_aguarde.style.display = 'block';
+        div_erro.style.display = 'none';
     }
-
     function finalizar_aguardar() {
         btn_entrar.disabled = false;
-        img_aguarde.style.display='none';
-        div_erro.style.display='block';
+        img_aguarde.style.display = 'none';
+        div_erro.style.display = 'block';
     }
-
 </script>

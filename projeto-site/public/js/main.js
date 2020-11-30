@@ -1,4 +1,4 @@
-$('.slider-principal').slick({
+$('.slides').slick({
     lazyLoad: 'ondemand',
     slidesToShow: 3,
     slidesToScroll: 2,

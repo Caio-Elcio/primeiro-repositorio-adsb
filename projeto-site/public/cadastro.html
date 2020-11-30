@@ -16,7 +16,7 @@
         <div class="container">
             <div class="logo">
                 <img src="./imagens/logo.png" />
-                <div class="redes-sociais">
+                <div class="icones">
                     <ul>
                         <li><img src="./imagens/mic.png"></li>
                         <li><img src="./imagens/dj.png"></li>
@@ -33,8 +33,8 @@
             <div class="nav">
                 <ul>
                     <li><a href="index.html">Início</a></li>
-                    <li><a href="sabotage.html">Sabotage</a></li>
-                    <li><a href="racionais.html">Racionais MC's</a></li>
+                    <li><a id="sabotage" style="display: none;" href="sabotage.html">Sabotage</a></li>
+                    <li><a id="racionais" style="display: none;" href="racionais.html">Racionais MC's</a></li>
                     <li><a href="login.html">Login</a></li>
                     <li class="current"><a href="cadastro.html">Cadastro</a></li>
                 </ul>
@@ -56,7 +56,7 @@
                 Confirme sua senha: <input type="password" name="" id="senha2" onkeyup="validar_senha2()"
                     placeholder="Senha">
                 <p id="mensagem_senha2"></p>
-                <button type="submit" class="botao">Cadastrar</button>
+                <button id="cadastrar_btn" type="submit" class="botao">Cadastrar</button>
             </form>
         </div>
         <div class="container" id="img">
@@ -74,19 +74,23 @@
 
 </html>
 <script>
+    session();
+    function session() {
+        var session = sessionStorage.getItem("nome");
+        if (session != undefined) {
+            sabotage.style = "display:block";
+            racionais.style = "display:block";
+        }
+    }
     function cadastrar() {
         var formulario = new URLSearchParams(new FormData(form_cadastro));
         fetch("/usuarios/cadastrar", {
             method: "POST",
             body: formulario
         }).then(function (response) {
-
             if (response.ok) {
-
                 window.location.href = 'login.html';
-
             } else {
-
                 console.log('Erro de cadastro!');
                 response.text().then(function (resposta) {
                     div_erro.innerHTML = resposta;
@@ -117,12 +121,14 @@
     }
     function validar_senha2() {
         var senh_a2 = senha2.value;
-        if (senh_a2.length >= 6) {
+        if (senh_a2 == senha1.value) {
             senha2.style = `border-color: green`;
             mensagem_senha2.innerHTML = `Senha válida`;
+            cadastrar_btn.removeAttribute('disabled');
         } else {
             senha2.style = `border-color: red`;
             mensagem_senha2.innerHTML = `Informe uma senha válida!`;
+            cadastrar_btn.setAttribute('disabled', 'disabled');
         }
     }
     function redirecionar() {
